@@ -31,4 +31,17 @@
 <constructor-arg> <ref bean ="address"/>	</constructor-arg>
 </bean>
 
+<!-- Constructor Injection with Collection Example -->
+<bean id ='question' class="com.javatpoint.Question">
+<constructor-arg value ="777" type="int"></constructor-arg>
+<constructor-arg value ="What is Java?"></constructor-arg>
+<constructor-arg>
+<list>
+<value> Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies. </value>
+<value>It is a computing platform for application development. </value>
+<value>Java is fast, secure, and reliable, therefore. It is widely used for developing Java applications in laptops, data centers, game consoles, scientific supercomputers, cell phones, etc.</value>
+</list>
+</constructor-arg>
+</bean>
+
 </beans>

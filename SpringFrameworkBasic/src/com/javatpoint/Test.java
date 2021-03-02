@@ -31,14 +31,22 @@ public static void main(String[] args) {
 	Student student=(Student)context.getBean("studentbean");
 	student.displayInfo();
 	
-    /* Constructor Injection: Dependency Injection by constructor */
+	/*
+	 * Constructor Injection: Dependency Injection by constructor
+	 */
 	Employee employee = (Employee)context.getBean("employee");
 	employee.show();
 
-//	/* Constructor Injection(CI): with Dependent Object */
+	/*
+	 * Constructor Injection(CI): with Dependent Object
+	 */
 	Doctor doctor = (Doctor)context.getBean("doctor");
 	doctor.show();
-	
+	/*
+	 * Constructor Injection with Collection Example
+	 */
+	Question question= (Question)context.getBean("question");
+	question.displayInfo();
 	
 }
 }
