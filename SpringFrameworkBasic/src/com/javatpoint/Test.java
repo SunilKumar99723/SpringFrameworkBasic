@@ -48,5 +48,8 @@ public static void main(String[] args) {
 	Question question= (Question)context.getBean("question");
 	question.displayInfo();
 	
+	QuestionTwo questiontwo= (QuestionTwo)context.getBean("questiontwo");
+	questiontwo.displayInfo();
+	
 }
 }
