@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
-public class Test {
+public class TestMainClass {
 public static void main(String[] args) {
 	/*
 	 * There are two types of IoC containers: 1. BeanFactory 2. ApplicationContext (Both are Interfaces)
